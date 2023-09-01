@@ -106,9 +106,9 @@ void EXTI_VidDisable(Interrupts Intr)
 {
 	switch(Intr)
 	{
-	case INT0:	CLR_BIT(GICR,INT0); break;
-	case INT1:	CLR_BIT(GICR,INT1); break;
-	case INT2:	CLR_BIT(GICR,INT2); break;
+	case INTR0:	CLR_BIT(GICR,INT0); break;
+	case INTR1:	CLR_BIT(GICR,INT1); break;
+	case INTR2:	CLR_BIT(GICR,INT2); break;
 	}
 }
 void EXTI_VidSetCallback(Interrupts Intr,void(*Callback)())
